@@ -30,3 +30,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 npm install axios
 ```
+
+### vue router (페이지 나눌 때 쓴다고 한다)
+```
+npm install vue-router@next
+```
+
