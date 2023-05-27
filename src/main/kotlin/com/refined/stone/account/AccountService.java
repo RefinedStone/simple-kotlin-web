@@ -21,6 +21,7 @@ public class AccountService {
         }
         else{
             Account account = new Account(accountRequestDto);
+            accountRepository.save(account);
             return true;
         }
     }

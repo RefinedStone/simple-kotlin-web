@@ -14,6 +14,8 @@ public class AccountRequestDto {
         this.nickname=nickname;
     }
 
+    //NoArgs
+    public AccountRequestDto(){}
     //getter //setter
     public String getEmail() {
         return email;
