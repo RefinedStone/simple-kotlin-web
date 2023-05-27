@@ -17,7 +17,6 @@ public class AccountController {
 
     @PostMapping
     public boolean signIn(@RequestBody AccountRequestDto accountRequestDto) {
-
         return accountService.signIn(accountRequestDto);
     }
 
