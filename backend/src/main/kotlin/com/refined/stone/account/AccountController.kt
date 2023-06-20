@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
+import java.lang.RuntimeException
 
 @RestController
 @RequestMapping("/accounts")
@@ -14,6 +15,6 @@ class AccountController
 constructor(private val accountService: AccountService) {
     @PostMapping
     fun signIn(@RequestBody accountRequestDto: AccountRequestDto?): Boolean {
-        return accountService.signIn(accountRequestDto)
+        return accountService.signIn(accountRequestDto ?: throw RuntimeException("Parameter can not be Null"))
     }
 }

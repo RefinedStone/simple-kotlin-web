@@ -28,8 +28,8 @@ class Account {
     //NoArgsConstructor
     constructor() {}
     constructor(accountRequestDto: AccountRequestDto) {
-        email = accountRequestDto.getEmail()
-        nickname = accountRequestDto.getNickname()
-        team = accountRequestDto.getTeam()
+        email = accountRequestDto.email
+        nickname = accountRequestDto.nickname
+        team = accountRequestDto.team
     }
 }
