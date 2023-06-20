@@ -1,17 +1,22 @@
-simple-kotlin-web
+# simple-kotlin-web
 start with kotlin for spring web service
 
-backend: springboot frontend: vue.js
+backend: springboot
+frontend: vue.js
 
-database settings
-docker run
+# database settings
+### docker run
 docker run -d -p 3306:3306 --name mykotlin-db -e MYSQL_ROOT_PASSWORD=prettier mysql
 
-docker execution
+### docker execution
 docker exec -it mykotlin-db bash
 
-enter mysql
-mysql -uroot -p // password = prettier
+### enter mysql
+mysql -uroot -p
+// password = prettier
 
-create db
+### create db
 create database kotlin
+
+
+
