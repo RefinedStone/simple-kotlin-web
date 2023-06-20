@@ -20,7 +20,7 @@ export default {
     return {
       스타일: "color:blue",
       메뉴들: [
-        {name: 'Home', path: '/Home'},
+        {name: 'Home', path: '/'},
         {name: 'Reaction Test', path: '/Reaction'},
         {name: 'Ranking', path: '/Ranking'},
         {name: 'Sign in', path: '/SignIn'}],
